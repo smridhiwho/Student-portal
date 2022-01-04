@@ -4,7 +4,7 @@
   }
   
   body {
-    background-color: #152a79;
+    background-color: black;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -21,14 +21,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #020225a9;
-    color: aliceblue;
+    background-color: white;
+    color: black;
     z-index: 5;
-    padding: 3px;
+    padding: 0.438rem;
   }
   #logo {
     font-size: 1.4rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     margin: 0.5rem;
   }
   .nav-links {
@@ -43,20 +43,17 @@
     list-style: none;
     padding: 0.5rem 0.8rem;
   
-    margin: 2px 5px;
+    margin: 0.125rem 0.313rem;
   }
   .nav-links a {
-    color: aliceblue;
+    color: black;
     text-decoration: none;
     padding: inherit;
   }
-  li .active {
-    color: yellow;
-    background-color: #0d0d772f;
-  }
+
   nav a:hover {
     background-color: #0d0d772f;
-    color: yellow;
+    color: rgb(104, 104, 102);
   }
   .toggle-btn {
     position: absolute;
@@ -65,11 +62,11 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.875rem;
+    height: 1.313rem;
   }
   .toggle-btn .bar {
-    height: 3px;
+    height: 0.187rem;
     width: 100%;
     border-radius: 1rem;
     background-color: white;
@@ -81,11 +78,62 @@
     justify-content: center;
     flex-direction: column;
   }
-  header h1 {
+  .heading {
     color: white;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
+    height: 40%;
+    position:absolute;
   }
   
+  .sub-heading {
+    color: rgb(114, 110, 110);
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 8%;
+    position:absolute;
+    text-align: center;
+  }
+  
+  .intro{
+    color: rgb(170, 165, 165);
+    font-size: 1rem;
+    font-family: monospace;
+    height: 0.03%;
+    position:absolute;
+    padding-top: 10%;
+    margin-right: 5%;
+    margin-left: 7%;
+  }
+  
+  .line-1{
+      position: relative;
+      top: 50%;  
+      width: 24em;
+      margin: 0 auto;
+      border-right: 0.125rem solid rgba(255,255,255,.75);
+      font-size: 1.5rem;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 6s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  
+/* TOOLS SECTION */
   main button {
     border: none;
   }
@@ -101,7 +149,7 @@
     font-size: 4rem;
     color: white;
     padding: 2rem 7rem;
-    box-shadow: 0 4px 20px 0 #020225a9, 0 0 0 0 #020225a9;
+    box-shadow: 0 0.25rem 1.25rem 0 #78787ea9, 0 0 0 0 #3c3c3da9;
   }
   
   main > .tools-items {
@@ -109,20 +157,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 85vw;
-    margin: 50px auto;
+    margin: 3.125rem auto;
   }
   
   main .row {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px 0 #020225a9, 0 6px 20px 0 #020225a9;
-    padding: 10px 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    height: 15vh;
-    width: 35vw;
-    /* top: 550px; */
+    box-shadow: 0 0.25rem 0.50rem 0 #78787ea9, 0 0.375rem 1.25rem 0 #3c3c3da9;
+  padding: 0.625rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0.313rem;
+  /* top: 550px; */
     /* position: relative; */
   }
   main .row a {
@@ -130,15 +176,15 @@
     text-decoration: none;
     color: white;
     text-align: center;
-    letter-spacing: 1px;
-    font-size: 30px;
+    letter-spacing: 0.063rem;
+    font-size: 1.875rem;
     font-weight: 600;
     top: 50vh;
     transition: all 200ms ease-in-out;
   }
   
   main .row a:hover {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   
   .logo {
@@ -148,7 +194,7 @@
   }
   
   main button {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: left;
     background-color: transparent;
   }
